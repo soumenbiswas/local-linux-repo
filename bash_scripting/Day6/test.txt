@@ -1,0 +1,18 @@
+● httpd.service - The Apache HTTP Server
+   Loaded: loaded (/usr/lib/systemd/system/httpd.service; disabled; vendor preset: disabled)
+   Active: active (running) since Tue 2018-09-11 15:29:08 IST; 1h 20min ago
+     Docs: man:httpd(8)
+           man:apachectl(8)
+ Main PID: 2469 (httpd)
+   Status: "Total requests: 0; Current requests/sec: 0; Current traffic:   0 B/sec"
+   CGroup: /system.slice/httpd.service
+           ├─2469 /usr/sbin/httpd -DFOREGROUND
+           ├─2470 /usr/sbin/httpd -DFOREGROUND
+           ├─2471 /usr/sbin/httpd -DFOREGROUND
+           ├─2472 /usr/sbin/httpd -DFOREGROUND
+           ├─2473 /usr/sbin/httpd -DFOREGROUND
+           └─2474 /usr/sbin/httpd -DFOREGROUND
+
+Sep 11 15:29:07 localhost.localdomain systemd[1]: Starting The Apache HTTP Server...
+Sep 11 15:29:08 localhost.localdomain httpd[2469]: AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using localhost.localdomain. Set the 'ServerName' directive globally to suppress this message
+Sep 11 15:29:08 localhost.localdomain systemd[1]: Started The Apache HTTP Server.
